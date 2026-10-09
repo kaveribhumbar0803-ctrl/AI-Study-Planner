@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/rounded_card"
+            android:padding="24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Subject"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                android:textColor="#1A237E"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build your personalized study plan"
+                android:textSize="15sp"
+                android:textColor="#777777"
+                android:gravity="center"
+                android:layout_marginTop="7dp" />
+
+        </LinearLayout>
+
+        <!-- Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Subject Name -->
+        <EditText
+            android:id="@+id/etSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Subject name"
+            android:textSize="16sp"
+            android:textColor="#222222"
+            android:textColorHint="#888888"
+            android:inputType="textCapSentences"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp" />
+
+        <!-- Study Hours -->
+        <EditText
+            android:id="@+id/etStudyHours"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Daily study hours"
+            android:textSize="16sp"
+            android:textColor="#222222"
+            android:textColorHint="#888888"
+            android:inputType="numberDecimal"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp"
+            android:layout_marginTop="14dp" />
+
+        <!-- Tip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E8EAF6"
+            android:padding="18dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Study Planning Tip"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3949AB" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set realistic daily study hours so you can maintain a consistent study routine."
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <!-- Save -->
+        <Button
+            android:id="@+id/btnSaveSubject"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Save Subject"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
